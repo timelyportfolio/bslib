@@ -469,7 +469,7 @@ class Sidebar {
   private _finalizeState(): void {
     const { container, sidebar, toggle } = this.layout;
     container.classList.remove(Sidebar.classes.TRANSITIONING);
-    sidebar.hidden = this.isClosed;
+    // sidebar.hidden = this.isClosed;
     toggle.setAttribute("aria-expanded", this.isClosed ? "false" : "true");
 
     // Send browser-native event with updated sidebar state

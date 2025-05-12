@@ -258,16 +258,6 @@ $bslib-sidebar-column-sidebar: Min(calc(100% - var(--_padding-icon)), var(--_sid
       grid-template-columns: minmax(0, 1fr) 0;
     }
 
-    // Hide the sidebar contents after it's done transitioning so that
-    // those contents don't impact the overall layout (i.e., height)
-    &:not(.transitioning) {
-      // Putting `display:none` on .sidebar would change the number of columns
-      // in the grid, and I don't think we can transition between those states
-      > .sidebar > * {
-        display: none;
-      }
-    }
-
     > .main {
       border-radius: inherit;
       padding-left: var(--_padding-icon);

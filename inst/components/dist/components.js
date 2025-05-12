@@ -1,4 +1,4 @@
-/*! bslib 0.9.0.9000 | (c) 2012-2025 RStudio, PBC. | License: MIT + file LICENSE */
+/*! undefined undefined | (c) 2012-2025 RStudio, PBC. | License: undefined */
 "use strict";
 (() => {
   var __getOwnPropNames = Object.getOwnPropertyNames;
@@ -1132,7 +1132,6 @@
         _finalizeState() {
           const { container, sidebar, toggle } = this.layout;
           container.classList.remove(_Sidebar.classes.TRANSITIONING);
-          sidebar.hidden = this.isClosed;
           toggle.setAttribute("aria-expanded", this.isClosed ? "false" : "true");
           const event = new CustomEvent("bslib.sidebar", {
             bubbles: true,
